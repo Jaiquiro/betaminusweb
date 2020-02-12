@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<title>minus.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+<body class="minus-light-grey">
+    <!-- Navbar (sit on top) -->
+    <div class="minus-top" id="mybar">
+        <div class="minus-bar minus-transp minus-card" id="myNavbar">
+            <a href="#home" class="minus-bar-item minus-button minus-wide"><img src="img/logo.svg" style="height:30px ; width:100px ;" alt=""></a>
+            <!-- Right-sided navbar links -->
+            <div class="minus-right minus-hide-small" style="color: #fff;">
+                <a href="index.html #about" class="minus-bar-item minus-button">NOSOTROS</a>
+                <a href="index.html #servicios" class="minus-bar-item minus-button"> SERVICIOS</a>
+                <a href="index.html #portafolio" class="minus-bar-item minus-button"> PORTAFOLIO</a>
+                <a href="index.html #blog" class="minus-bar-item minus-button"> BLOG</a>
+                <a href="index.html #contact" class="minus-bar-item minus-button"> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="minus-bar-item minus-button minus-right minus-hide-large minus-hide-medium" onclick="minus_open()">
+                <img src="img/menu.svg" alt="" style="width: 50px; height: 30px;">
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="minus-sidebar minus-bar-block minus-black minus-card minus-animate-left minus-hide-medium minus-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="minus_close()" class="minus-bar-item minus-button minus-large minus-padding-16">Close ×</a>
+        <a href="index.html #about" onclick="minus_close()" class="minus-bar-item minus-button">ABOUT</a>
+        <a href="index.html #servicios" onclick="minus_close()" class="minus-bar-item minus-button">SERVICIOS</a>
+        <a href="index.html #portafolio" onclick="minus_close()" class="minus-bar-item minus-button">PORTAFOLIO</a>
+        <a href="index.html #blog" onclick="minus_close()" class="minus-bar-item minus-button">BLOG</a>
+        <a href="index.html #contact" onclick="minus_close()" class="minus-bar-item minus-button">CONTACT</a>
+    </nav>
+
+    <!-- minus-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="minus-content" style="max-width:1400px; background-color: #010626;">
+
+        <!-- Header -->
+        <header class="minus-container minus-center minus-padding-32">
+            <h1><b>MY BLOG</b></h1>
+            <p>Welcome to the blog of <span class="minus-tag">unknown</span></p>
+        </header>
+
+        <!-- Grid -->
+        <div class="minus-row">
+
+            <!-- Blog entries -->
+            <div class="minus-col l8 s12">
+                <!-- Blog entry -->
+                <div class="minus-card-4 minus-margin minus-white">
+                    <img src="/minusimages/woods.jpg" alt="Nature" style="width:100%">
+                    <div class="minus-container">
+                        <h3><b>TITLE HEADING</b></h3>
+                        <h5>Title description, <span class="minus-opacity">April 7, 2014</span></h5>
+                    </div>
+
+                    <div class="minus-container">
+                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent
+                            tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        <div class="minus-row">
+                            <div class="minus-col m8 s12">
+                                <p><button class="minus-button minus-padding-large minus-white minus-border"><b>READ MORE »</b></button></p>
+                            </div>
+                            <div class="minus-col m4 minus-hide-small">
+                                <p><span class="minus-padding-large minus-right"><b>Comments  </b> <span class="minus-tag">0</span></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Blog entry -->
+                <div class="minus-card-4 minus-margin minus-white">
+                    <img src="/minusimages/bridge.jpg" alt="Norway" style="width:100%">
+                    <div class="minus-container">
+                        <h3><b>BLOG ENTRY</b></h3>
+                        <h5>Title description, <span class="minus-opacity">April 2, 2014</span></h5>
+                    </div>
+
+                    <div class="minus-container">
+                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent
+                            tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        <div class="minus-row">
+                            <div class="minus-col m8 s12">
+                                <p><button class="minus-button minus-padding-large minus-white minus-border"><b>READ MORE »</b></button></p>
+                            </div>
+                            <div class="minus-col m4 minus-hide-small">
+                                <p><span class="minus-padding-large minus-right"><b>Comments  </b> <span class="minus-badge">2</span></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END BLOG ENTRIES -->
+            </div>
+
+            <!-- Introduction menu -->
+            <div class="minus-col l4">
+                <!-- About Card -->
+                <div class="minus-card minus-margin minus-margin-top">
+                    <img src="/minusimages/avatar_g.jpg" style="width:100%">
+                    <div class="minus-container minus-white">
+                        <h4><b>My Name</b></h4>
+                        <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Posts -->
+                <div class="minus-card minus-margin">
+                    <div class="minus-container minus-padding">
+                        <h4>Popular Posts</h4>
+                    </div>
+                    <ul class="minus-ul minus-hoverable minus-white">
+                        <li class="minus-padding-16">
+                            <img src="/minusimages/workshop.jpg" alt="Image" class="minus-left minus-margin-right" style="width:50px">
+                            <span class="minus-large">Lorem</span><br>
+                            <span>Sed mattis nunc</span>
+                        </li>
+                        <li class="minus-padding-16">
+                            <img src="/minusimages/gondol.jpg" alt="Image" class="minus-left minus-margin-right" style="width:50px">
+                            <span class="minus-large">Ipsum</span><br>
+                            <span>Praes tinci sed</span>
+                        </li>
+                        <li class="minus-padding-16">
+                            <img src="/minusimages/skies.jpg" alt="Image" class="minus-left minus-margin-right" style="width:50px">
+                            <span class="minus-large">Dorum</span><br>
+                            <span>Ultricies congue</span>
+                        </li>
+                        <li class="minus-padding-16 minus-hide-medium minus-hide-small">
+                            <img src="/minusimages/rock.jpg" alt="Image" class="minus-left minus-margin-right" style="width:50px">
+                            <span class="minus-large">Mingsum</span><br>
+                            <span>Lorem ipsum dipsum</span>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- Labels / tags -->
+                <div class="minus-card minus-margin">
+                    <div class="minus-container minus-padding">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="minus-container minus-white">
+                        <p><span class="minus-tag minus-black minus-margin-bottom">Travel</span> <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">New York</span> <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">London</span>
+                            <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">IKEA</span> <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">NORWAY</span> <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">DIY</span>
+                            <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">Ideas</span> <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">Baby</span> <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">Family</span>
+                            <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">News</span> <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">Clothing</span> <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">Shopping</span>
+                            <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">Sports</span> <span class="minus-tag minus-light-grey minus-small minus-margin-bottom">Games</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- END Introduction Menu -->
+            </div>
+
+            <!-- END GRID -->
+        </div><br>
+
+        <!-- END minus-content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="minus-container minus-dark-grey minus-padding-32 minus-margin-top">
+        <button class="minus-button minus-black minus-disabled minus-padding-large minus-margin-bottom">Previous</button>
+        <button class="minus-button minus-black minus-padding-large minus-margin-bottom">Next »</button>
+        <p>Powered by <a href="https://www.minusschools.com/minuscss/default.asp" target="_blank">minus.css</a></p>
+    </footer>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("mybar").style.top = "0";
+            } else {
+                document.getElementById("mybar").style.top = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function minus_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function minus_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

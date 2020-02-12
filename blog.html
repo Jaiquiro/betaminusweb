@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<title>Desarrollo web, apps y marketing | MINUSMAYA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script src="./js/myscript.js"></script>
+
+<link rel="stylesheet" href="css/estilo.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+    /* Full height image header */
+    
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("img/3325.jpg");
+        min-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .minus-bar .minus-button {
+        padding: 16px;
+    }
+</style>
+
+<body>
+
+
+    <!-- Navbar (sit on top) -->
+    <div class="minus-top" id="mybar">
+        <div class="minus-bar minus-transp minus-card" id="myNavbar">
+            <a href="#home" class="minus-bar-item minus-button minus-wide"><img src="img/logo.svg" style="height:30px ; width:100px ;" alt=""></a>
+            <!-- Right-sided navbar links -->
+            <div class="minus-right minus-hide-small" style="color: #fff;">
+                <a href="index.html #about" class="minus-bar-item minus-button">NOSOTROS</a>
+                <a href="index.html #servicios" class="minus-bar-item minus-button"> SERVICIOS</a>
+                <a href="index.html #portafolio" class="minus-bar-item minus-button"> PORTAFOLIO</a>
+                <a href="index.html #blog" class="minus-bar-item minus-button"> BLOG</a>
+                <a href="index.html #contact" class="minus-bar-item minus-button"> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="minus-bar-item minus-button minus-right minus-hide-large minus-hide-medium" onclick="minus_open()">
+                <img src="img/menu.svg" alt="" style="width: 50px; height: 30px;">
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="minus-sidebar minus-bar-block minus-black minus-card minus-animate-left minus-hide-medium minus-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="minus_close()" class="minus-bar-item minus-button minus-large minus-padding-16">Close ×</a>
+        <a href="#about" onclick="minus_close()" class="minus-bar-item minus-button">ABOUT</a>
+        <a href="#servicios" onclick="minus_close()" class="minus-bar-item minus-button">SERVICIOS</a>
+        <a href="#portafolio" onclick="minus_close()" class="minus-bar-item minus-button">PORTAFOLIO</a>
+        <a href="#blog" onclick="minus_close()" class="minus-bar-item minus-button">BLOG</a>
+        <a href="#contact" onclick="minus_close()" class="minus-bar-item minus-button">CONTACT</a>
+    </nav>
+    <main style="background-color: #010626;">
+        <div class="minus-container minus-center minus-dark-grey " style="padding:128px 16px " id="blog ">
+            <h3>BLOG</h3>
+            <p class="minus-center minus-large ">Lo ultimo en tecnologia y curiosidades</p>
+            <div class="minus-row-padding minus-grayscale " style="margin-top:64px ">
+                <div class="minus-col l3 m6 minus-margin-bottom ">
+                    <div class="minus-card ">
+                        <img src="img/3107.jpg " alt="imgblog " style="width:310px; height:207px; ">
+                        <div class="minus-container ">
+                            <h3 style="color: #fff; ">Marketing Digital: Tipos de Estrategias de Marketing online para empresas</h3>
+                            <p class="minus-opacity ">Por Albert Ibañez - MINUSMAYA | Ecommerce
+
+                            </p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <p><button class="minus-button minus-light-grey minus-block "> <!--<i class="fa fa-envelope "></i>-->Seguir leyendo</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="minus-col l3 m6 minus-margin-bottom ">
+                    <div class="minus-card ">
+                        <img src="img/18707.jpg " alt="imgblog " style="width:310px; height:207px; ">
+                        <div class="minus-container ">
+                            <h3 style="color: #fff; ">¿Por qué crear una landing page?</h3>
+                            <p class="minus-opacity ">Por Albert Ibañez - MINUSMAYA | Ecommerce
+
+                            </p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <p><button class="minus-button minus-light-grey minus-block "> <!--<i class="fa fa-envelope "></i>-->Seguir leyendo</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="minus-col l3 m6 minus-margin-bottom ">
+                    <div class="minus-card ">
+                        <img src="img/3414.jpg " alt="imgblog " style="width:310px; height:207px; ">
+                        <div class="minus-container ">
+                            <h3 style="color: #fff; ">Estrategias de Marketing Turístico para superar la temporada baja</h3>
+                            <p class="minus-opacity ">Por Albert Ibañez - MINUSMAYA | Ecommerce
+
+                            </p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <p><button class="minus-button minus-light-grey minus-block "> <!--<i class="fa fa-envelope "></i>-->Seguir leyendo</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="minus-col l3 m6 minus-margin-bottom ">
+                    <div class="minus-card ">
+                        <img src="img/18706.jpg " alt="imgblog " style="width:310px; height:207px; ">
+                        <div class="minus-container ">
+                            <h3 style="color: #fff; ">Desarrollo de apps nativas vs apps híbridas</h3>
+                            <p class="minus-opacity ">Por Albert Ibañez - MINUSMAYA | Ecommerce
+
+                            </p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <p><button class="minus-button minus-light-grey minus-block "> <!--<i class="fa fa-envelope "></i>-->Seguir leyendo</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="minus-center minus-black minus-padding-64 ">
+        <a href="#home " class="minus-button minus-light-grey ">INICIO</a>
+        <div class="minus-xlarge minus-section ">
+            <a href="https://www.facebook.com/minus.maya/?__tn__=%2Cd%2CP-R&eid=ARDnzyZKs8ZGSIbI6NcjJOqKso6CARvoAbSsphRyiJmBeVdIeZdpLTGG98H0vcv8ycnVdsNQ_85C_dPE>
+                        <i class=" minus-hover-opacity "> <img src="img/FaceIcon.svg " style="width:26px; height:44px; alt="FaceIcon"></i>
+            </a>
+            <i class=" minus-hover-opacity"> <img src="img/InstaIcon.svg" style="width:26px; height:44px; alt ="InstaIcon"></i>
+            <i class=" minus-hover-opacity"> <img src="img/EmailIcon.svg" style="width:26px; height:44px; alt="EmailIcon"></i>
+        </div>
+        <p>Powered by <a href="http://minusmaya.com/" target="_blank" class="minus-hover-text-green">MINUSMAYA</a></p>
+    </footer>
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("mybar").style.top = "0";
+            } else {
+                document.getElementById("mybar").style.top = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function minus_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function minus_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
